@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Market - Registro</title>
+    <base href="/san-market-frontend/">
+    <link rel="stylesheet" href="/src/css/base.css">
+    <link rel="stylesheet" href="/src/css/register.css">
+</head>
+<body>
+    <div class="register">
+        <div class="register__logo-container">
+            <img src="/src/assets/svg/logo.svg" alt="San Market Logo" class="register__logo">
+        </div>
+        <div class="register__form-container">
+            <div class="form-container_group">
+                <h1 class="register__title">Registrarse</h1>
+                <form id="register-form" class="register__form">
+                    <label for="username" class="register__label">Nombre de usuario</label>
+                    <input type="text" id="username" name="username" class="register__input" required>
+                    
+                    <label for="email" class="register__label">Correo institucional</label>
+                    <input type="email" id="email" name="email" class="register__input" required>
+                    
+                    <label for="password" class="register__label">Contraseña</label>
+                    <input type="password" id="password" name="password" class="register__input" required>
+                    
+                    <button type="submit" class="register__button register__button--primary">Registrar</button>
+                </form>
+                <p class="register__footer">¿Ya tienes una cuenta? <a href="#" class="register__link">Inicia sesión</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="/src/js/auth/register.js"></script>
+</body>
+</html>

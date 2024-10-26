@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/san-market-frontend/">
+    <title>San Market - Construcción en Progreso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e0f7fa;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: 2px solid #00796b;
+        }
+        h1 {
+            color: #00796b;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+        .redirect-message {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡San Market está en Construcción!</h1>
+        <p>Desde este momento iniciamos oficialmente la construcción de <strong>San Market</strong>, una plataforma única pensada para facilitar el intercambio entre estudiantes.</p>
+        <p>En esta página podrás ver el progreso paso a paso de nuestro desarrollo. Cada avance y cambio estarán visibles para que seas parte de esta evolución.</p>
+        <div class="footer">
+            <p>¡Gracias por acompañarnos en este emocionante viaje!</p>
+        </div>
+        <div class="redirect-message">
+            <p>Redirigiendo a la página de registro en <span id="counter">5</span> segundos...</p>
+        </div>
+    </div>
+
+    <script>
+        // Inicializar el contador
+        let countdown = 5;
+        const counterElement = document.getElementById('counter');
+        
+        // Actualizar el contador cada segundo
+        const interval = setInterval(() => {
+            countdown--;
+            counterElement.textContent = countdown;
+            
+            if (countdown === 0) {
+                clearInterval(interval);
+                // Redirigir a la página de registro
+                window.location.href = '/src/views/register.html';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
