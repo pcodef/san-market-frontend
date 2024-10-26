@@ -17,14 +17,21 @@
             <div class="form-container_group">
                 <h1 class="register__title">Registrarse</h1>
                 <form id="register-form" class="register__form">
-                    <label for="username" class="register__label">Nombre de usuario</label>
-                    <input type="text" id="username" name="username" class="register__input" required>
+                    <div class="input-container">
+                        <input type="text" id="username" name="username" class="register__input" placeholder="Nombre de usuario" required>
+                        <img src="../assets/svg/user-icon.svg" alt="User Icon" class="input-icon">
+                    </div>
                     
-                    <label for="email" class="register__label">Correo institucional</label>
-                    <input type="email" id="email" name="email" class="register__input" required>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" class="register__input" placeholder="Correo institucional" required>
+                        <img src="../assets/svg/mail-icon.svg" alt="Email Icon" class="input-icon">
+                        <small>¿No tienes correo institucional?</small>
+                    </div>
                     
-                    <label for="password" class="register__label">Contraseña</label>
-                    <input type="password" id="password" name="password" class="register__input" required>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" class="register__input" placeholder="Contraseña" required>
+                        <img src="../assets/svg/password-icon.svg" alt="Password Icon" class="input-icon">
+                    </div>
                     
                     <button type="submit" class="register__button register__button--primary">Registrar</button>
                 </form>

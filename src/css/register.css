@@ -83,19 +83,20 @@ body {
 
 .register__label {
     font-size: 14px;
-    margin-bottom: 5px;
     color: var(--text-color);
-    align-self: flex-start;
+    margin-bottom: 0px;
+    display: block;
 }
 
 .register__input {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    padding-right: 40px; /* Espacio para el ícono */
+    margin-bottom: 5px;
     border: 1px solid var(--input-border-color);
     border-radius: 5px;
     background-color: var(--input-background);
     color: var(--text-color);
-    width: 100%;
 }
 
 .register__button {
@@ -125,7 +126,52 @@ body {
     margin-top: 10px;
 }
 
+.register__input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Espacio para el ícono */
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 16px;
+    outline: none;
+}
+
+.register__input::placeholder {
+    color: #bbb;
+}
+
 .register__link {
     color: var(--text-color);
     text-decoration: none;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.input-helper {
+    font-size: 12px;
+    color: var(--text-color);
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+small {
+    color: #bbb;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
 }
