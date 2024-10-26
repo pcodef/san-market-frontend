@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Market - Iniciar Sesión</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="login">
+        <div class="login__form-container">
+            <a href="#" class="login__back-button">&larr;</a>
+            <div class="form-container_group">
+                <h1 class="login__title">Iniciar sesión</h1>
+                <form id="login-form" class="login__form">
+                    <label for="username" class="login__label">Nombre de usuario</label>
+                    <input type="text" id="username" name="username" class="login__input" required>
+                    
+                    <label for="password" class="login__label">Contraseña</label>
+                    <input type="password" id="password" name="password" class="login__input" required>
+                    
+                    <button type="submit" class="login__button login__button--primary">Iniciar sesión</button>
+                </form>
+                <p class="login__footer">¿No tienes una cuenta? <a href="register.html" class="login__link">Regístrate</a></p>
+            </div>
+        </div>
+        <div class="login__logo-container">
+            <img src="../assets/svg/logo.svg" alt="San Market Logo" class="login__logo">
+        </div>
+    </div>
+    <script src="../js/auth/login.js"></script>
+</body>
+</html>
