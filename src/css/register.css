@@ -1,0 +1,119 @@
+/* Centrado en el body */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Ajustes en .register para el tamaño relativo */
+.register {
+    display: flex;
+    width: 70vw;
+    min-width: 600px;
+    max-width: 900px;
+    height: 500px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+}
+
+.register__logo-container {
+    background-color: var(--secondary-color);
+    padding: 0 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.register__logo {
+    width: 150px;
+    height: auto;
+}
+
+.register__form-container {
+    background-color: var(--primary-color);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    padding: 20px 20px 20px 80px; /* Ajuste de padding para espacio interno */
+}
+
+.form-container_group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+.register__title {
+    font-size: 27.6px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.register__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.register__label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    align-self: flex-start;
+}
+
+.register__input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    background-color: var(--input-background);
+    color: var(--text-color);
+    width: 100%; /* Ancho completo */
+}
+
+.register__button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: var(--button-color-light-mode);
+    width: 100%;
+    height: fit-content;
+}
+
+.register__button--primary {
+    background-color: var(--button-color-light-mode);
+    color: var(--secondary-color);
+}
+
+.register__button--primary:hover {
+    background-color: var(--button-hover-light-mode);
+}
+
+.register__footer {
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register__link {
+    color: var(--text-color);
+    text-decoration: none;
+}

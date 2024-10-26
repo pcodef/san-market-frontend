@@ -1,0 +1,45 @@
+/* Reset básico */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables de color */
+:root {
+    --primary-color: #831216;
+    --secondary-color: #ffffff;
+    --background-color: #e0e8e9;
+    --text-color: #FFFFFF;
+    --input-background: #f5f5f5;
+    --input-border-color: #dddddd;
+    --button-color-light-mode: #d1bdbd;
+    --button-hover-light-mode: #ac7477;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+input {
+    font-size: 16px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
