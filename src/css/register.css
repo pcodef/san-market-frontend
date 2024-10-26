@@ -20,6 +20,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     background-color: var(--secondary-color);
+    position: relative;
 }
 
 .register__logo-container {
@@ -30,6 +31,16 @@ body {
     justify-content: center;
     width: 35%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+}
+
+.login__back-button {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 40px;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 .register__logo {
@@ -37,6 +48,7 @@ body {
     height: auto;
 }
 
+/* Estilos del contenedor de formulario */
 .register__form-container {
     background-color: var(--primary-color);
     flex-grow: 1;
@@ -45,7 +57,7 @@ body {
     align-items: center;
     justify-content: center;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-    padding: 20px 20px 20px 80px; /* Ajuste de padding para espacio interno */
+    padding: 20px 20px 20px 80px;
 }
 
 .form-container_group {
@@ -83,7 +95,7 @@ body {
     border-radius: 5px;
     background-color: var(--input-background);
     color: var(--text-color);
-    width: 100%; /* Ancho completo */
+    width: 100%;
 }
 
 .register__button {
