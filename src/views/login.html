@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Market - Iniciar Sesión</title>
-    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
@@ -14,11 +13,17 @@
             <div class="form-container_group">
                 <h1 class="login__title">Iniciar sesión</h1>
                 <form id="login-form" class="login__form">
-                    <label for="username" class="login__label">Nombre de usuario</label>
-                    <input type="text" id="username" name="username" class="login__input" required>
+                    <div class="input-container">
+                        <input type="text" id="username" name="username" class="login__input" placeholder="Nombre de usuario" required>
+                        <img src="../assets/svg/user-icon.svg" class="input-icon" alt="User Icon"> <!-- Icono SVG del usuario -->
+                        <small class="input-helper">¿Olvidaste tu nombre de usuario?</small>
+                    </div>
                     
-                    <label for="password" class="login__label">Contraseña</label>
-                    <input type="password" id="password" name="password" class="login__input" required>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" class="login__input" placeholder="Contraseña" required>
+                        <img src="../assets/svg/password-icon.svg" class="input-icon" alt="Password Icon"> <!-- Icono SVG del candado -->
+                        <small class="input-helper">¿Olvidaste tu contraseña?</small>
+                    </div>
                     
                     <button type="submit" class="login__button login__button--primary">Iniciar sesión</button>
                 </form>
@@ -29,6 +34,5 @@
             <img src="../assets/svg/logo.svg" alt="San Market Logo" class="login__logo">
         </div>
     </div>
-    <script src="../js/auth/login.js"></script>
 </body>
 </html>

@@ -3,127 +3,160 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color);
+    background-color: #e0e8e9;
     width: 100vw;
     height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Ajustes en .login para el tamaño relativo */
+/* Contenedor principal del login */
 .login {
     display: flex;
     width: 70vw;
-    min-width: 600px;
     max-width: 900px;
     height: 500px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
     overflow: hidden;
-    background-color: var(--secondary-color);
+    background-color: #ffffff;
 }
 
-.login__logo-container {
-    background-color: var(--secondary-color);
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.login__logo {
-    width: 150px;
-    height: auto;
-}
-
+/* Contenedor del formulario con separación diagonal */
 .login__form-container {
-    background-color: var(--primary-color);
-    flex-grow: 1;
+    position: relative;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
-    padding: 20px 80px 20px 20px;
-    position: relative;
+    padding: 20px 60px 20px 40px;
+    background-color: #831216;
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
 }
 
+/* Botón de regreso */
 .login__back-button {
     position: absolute;
     top: 20px;
-    left: 40px;
-    font-size: 40px;
-    color: var(--text-color);
+    left: 20px;
+    font-size: 24px;
+    color: #ffffff;
     text-decoration: none;
 }
 
-.form-container_group {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    align-items: center;
+.login__back-button:hover {
+    color: #ac7477;
+    cursor: pointer;
 }
 
+/* Título centrado */
 .login__title {
-    font-size: 27.6px;
-    color: var(--text-color);
+    font-size: 24px;
+    color: #ffffff;
     margin-bottom: 20px;
     text-align: center;
+    width: 100%;
 }
 
+/* Estilos del formulario */
 .login__form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.login__label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: var(--text-color);
-    align-self: flex-start;
+.input-container {
+    position: relative;
+    width: 80%; /* Ajuste de ancho para que los campos sean más cortos */
+    max-width: 300px; /* Limita el ancho máximo */
+    margin-bottom: 20px;
 }
 
+/* Campo de entrada de texto con el placeholder */
 .login__input {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid var(--input-border-color);
-    border-radius: 5px;
-    background-color: var(--input-background);
-    color: var(--text-color);
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: none;
+    border-bottom: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Iconos SVG */
+.input-icon {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 18px;
+    fill: #ffffff; /* Asegura que los SVG estén en blanco */
+}
+
+/* Texto de ayuda debajo de cada campo */
+.input-helper {
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 5px;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: left;
     width: 100%;
 }
 
+/* Botón de inicio de sesión */
 .login__button {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    background-color: var(--button-color-light-mode);
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #831216;
     width: 100%;
-    height: fit-content;
+    max-width: 200px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-self: center;
 }
 
-.login__button--primary {
-    background-color: var(--button-color-light-mode);
-    color: var(--secondary-color);
+.login__button:hover {
+    background-color: #ac7477;
+    color: #ffffff;
 }
 
-.login__button--primary:hover {
-    background-color: var(--button-hover-light-mode);
-}
-
+/* Estilo del pie de página del formulario */
 .login__footer {
     font-size: 14px;
-    color: var(--text-color);
+    color: #ffffff;
     text-align: center;
     margin-top: 10px;
+    width: 100%;
 }
 
 .login__link {
-    color: var(--text-color);
-    text-decoration: none;
+    color: #ffffff;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* Contenedor del logo */
+.login__logo-container {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 20px;
+}
+
+.login__logo {
+    width: 200px;
+    height: auto;
 }
