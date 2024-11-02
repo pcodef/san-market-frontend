@@ -34,6 +34,11 @@ body {
     position: relative;
 }
 
+.register__logo {
+    width: 200px; /* Aumenta el tamaño del logo */
+    height: auto;
+}
+
 .login__back-button {
     position: absolute;
     top: 20px;
@@ -41,11 +46,6 @@ body {
     font-size: 40px;
     color: var(--primary-color);
     text-decoration: none;
-}
-
-.register__logo {
-    width: 150px;
-    height: auto;
 }
 
 /* Estilos del contenedor de formulario */
@@ -90,29 +90,30 @@ body {
 
 .register__input {
     width: 100%;
-    padding: 10px;
-    padding-right: 40px; /* Espacio para el ícono */
-    margin-bottom: 5px;
-    border: 1px solid var(--input-border-color);
-    border-radius: 5px;
-    background-color: var(--input-background);
+    padding: 10px 40px 10px 10px; /* Espacio para el ícono */
+    border: none;
+    border-bottom: 3px solid #fff; /* Línea más gruesa */
+    background-color: transparent;
     color: var(--text-color);
+    font-size: 16px;
+    outline: none;
+}
+
+.register__input::placeholder {
+    color: #bbb;
 }
 
 .register__button {
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
-    background-color: var(--button-color-light-mode);
+    background-color: #fff; /* Fondo blanco */
+    color: var(--primary-color); /* Texto en rojo */
+    border: 2px solid var(--primary-color); /* Agregar borde */
     width: 100%;
     height: fit-content;
-}
-
-.register__button--primary {
-    background-color: var(--button-color-light-mode);
-    color: var(--secondary-color);
 }
 
 .register__button--primary:hover {
@@ -126,24 +127,9 @@ body {
     margin-top: 10px;
 }
 
-.register__input {
-    width: 100%;
-    padding: 10px 40px 10px 10px; /* Espacio para el ícono */
-    border: none;
-    border-bottom: 2px solid #fff;
-    background-color: transparent;
-    color: var(--text-color);
-    font-size: 16px;
-    outline: none;
-}
-
-.register__input::placeholder {
-    color: #bbb;
-}
-
-.register__link {
-    color: var(--text-color);
-    text-decoration: none;
+.register__footer a {
+    color: #fff; /* Color blanco para que se vea */
+    text-decoration: underline;
 }
 
 .input-container {
@@ -154,18 +140,30 @@ body {
 
 .input-icon {
     position: absolute;
-    top: 50%;
+    top: 20%; /* Eleva el icono al nivel del texto */
     right: 10px;
-    transform: translateY(-50%);
+    transform: translateY(-20%); /* Ajusta la posición */
     width: 20px;
     height: 20px;
-    opacity: 0.7;
+    fill: #fff; /* Asegura que los iconos sean blancos */
+}
+
+/* Estilo para el texto adicional al lado del icono */
+.input-suffix {
+    position: absolute;
+    right: 35px; /* Ajusta este valor si es necesario */
+    top: 20%; /* Eleva el texto al nivel del campo de entrada */
+    transform: translateY(-20%);
+    color: #bbb; /* Color del texto */
+    font-size: 14px;
 }
 
 .input-helper {
     font-size: 12px;
-    color: var(--text-color);
-    margin-top: -5px;
+    color: #fff; /* Blanco */
+    font-style: italic; /* Cursiva */
+    text-decoration: underline; /* Subrayado */
+    margin-top: 5px; /* Espacio debajo de la línea de entrada */
     margin-bottom: 15px;
 }
 
