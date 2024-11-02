@@ -9,8 +9,9 @@
     width: 80%;
     max-width: 900px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif; /* Ajuste de fuente */
 }
+
+/* Resto de tu código CSS */
 
 .verification-message {
     max-width: 500px;
@@ -18,11 +19,16 @@
 
 .verification-icon,
 .contact-icon {
-    width: 60px;
+    width: 60px; /* Ajusta el tamaño según tu necesidad */
     height: 60px;
     display: block;
     margin: 0 auto 20px;
-    fill: #7A1C1D; /* Color rojo para los íconos */
+    color: #7A1C1D; /* Color rojo para los íconos */
+}
+
+.verification-icon svg,
+.contact-icon svg {
+    fill: currentColor; /* Asegura que los íconos usen el color actual */
 }
 
 .verification-message h1 {
@@ -56,10 +62,10 @@
 }
 
 .verification-logo {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .verification-logo img {
-    width: 150px;
+    width: 250px;
     height: auto;
 }
